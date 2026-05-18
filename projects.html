@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Emco Engineering</title>
+  <meta name="description" content="Emco Engineering project gallery — CCTV, security, audio, AV and PABX installations across Sri Lanka since 2004.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div id="page-overlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo nav-link-anim">
+      <img src="assets/logo.png" alt="Emco Engineering" class="logo-img" onerror="this.closest('.nav-logo').classList.add('logo-fallback-active')">
+      <div class="logo-text-fallback"><div class="logo-emco">EMCO</div><div class="logo-engineering">Engineering</div></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"    class="nav-link nav-link-anim">Home</a>
+      <a href="about.html"   class="nav-link nav-link-anim">About</a>
+      <a href="services.html" class="nav-link nav-link-anim">Services</a>
+      <a href="projects.html" class="nav-link active nav-link-anim">Projects</a>
+      <a href="contact.html"  class="nav-link nav-link-anim">Contact</a>
+    </div>
+    <div class="nav-cta-group">
+      <a href="tel:+94777654910" class="btn-nav-call">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wa.me/94777654910" class="btn-nav-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-scrim" id="mobileScrim"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"    class="mobile-link nav-link-anim">Home</a>
+  <a href="about.html"   class="mobile-link nav-link-anim">About</a>
+  <a href="services.html" class="mobile-link nav-link-anim">Services</a>
+  <a href="projects.html" class="mobile-link nav-link-anim">Projects</a>
+  <a href="contact.html"  class="mobile-link nav-link-anim">Contact</a>
+  <div class="mobile-cta">
+    <a href="tel:+94777654910" class="mobile-call">📞 Call 077 765 4910</a>
+    <a href="https://wa.me/94777654910" class="mobile-wa" target="_blank">💬 WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="ph-content">
+    <div class="ph-label">Our Work</div>
+    <h1>Projects &amp; <em>Gallery</em></h1>
+  </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section class="projects-page">
+  <div class="section-inner">
+    <div style="display:grid; grid-template-columns:1fr auto; align-items:end; gap:40px; margin-bottom:48px; flex-wrap:wrap;">
+      <div>
+        <div class="section-eyebrow reveal">Portfolio</div>
+        <h2 class="section-heading reveal d1">Work That <em>Stands the Test</em> of Time</h2>
+        <p class="section-body reveal d2">Emco installations from the mid-2000s are still running seamlessly. Here is a selection of the projects we're proud of — spanning security, audio and AV across Sri Lanka.</p>
+      </div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="filter-bar reveal d3">
+      <button class="f-btn active" data-filter="all">All Projects</button>
+      <button class="f-btn" data-filter="cctv">CCTV</button>
+      <button class="f-btn" data-filter="alarm">Security Alarm</button>
+      <button class="f-btn" data-filter="audio">Distributed Audio</button>
+      <button class="f-btn" data-filter="pa">PA Systems</button>
+      <button class="f-btn" data-filter="av">Audio Visual</button>
+      <button class="f-btn" data-filter="pabx">PABX</button>
+    </div>
+
+    <!-- Projects grid -->
+    <div class="projects-grid reveal d4">
+
+      <div class="proj-card" data-cat="cctv">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F5EDD5,#EDE0B0);">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">CCTV &amp; Surveillance</div>
+          <div class="proj-name">Sarasavi Bookshop Chain</div>
+          <div class="proj-loc">Multiple branches, Island-wide</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="audio">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F8F6F2,#F0E8D0);">
+          <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">Distributed Audio</div>
+          <div class="proj-name">Hotel Restaurant BGM System</div>
+          <div class="proj-loc">Colombo 03</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="cctv">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#EDE8D2,#F5EDD5);">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">CCTV &amp; Surveillance</div>
+          <div class="proj-name">Arpico Supercentre</div>
+          <div class="proj-loc">Multiple locations, Island-wide</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="pa">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F5EDD5,#F8F3E2);">
+          <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">PA System</div>
+          <div class="proj-name">School Campus PA &amp; Bell System</div>
+          <div class="proj-loc">Pannipitiya</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="alarm">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F8F6F2,#EDE5C8);">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">Security Alarm</div>
+          <div class="proj-name">Residential Villa Security</div>
+          <div class="proj-loc">Kotte</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="av">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F5EDD5,#EAE0BE);">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">Audio Visual</div>
+          <div class="proj-name">Corporate Boardroom AV</div>
+          <div class="proj-loc">Colombo 07</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="audio">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F8F3E4,#F5EDD5);">
+          <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">Distributed Audio</div>
+          <div class="proj-name">Retail Chain In-Store Music</div>
+          <div class="proj-loc">Kalubowila &amp; Nugegoda</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="pabx">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F5EDD5,#EDE8D0);">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">PABX System</div>
+          <div class="proj-name">Office Complex IP-PBX</div>
+          <div class="proj-loc">Panadura</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="cctv">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#EEE8D4,#F5EDD5);">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">CCTV &amp; Surveillance</div>
+          <div class="proj-name">Apartment Complex Security</div>
+          <div class="proj-loc">Kalubowila</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="pa">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F5EDD5,#F2EAD6);">
+          <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">PA System</div>
+          <div class="proj-name">Warehouse Announcement System</div>
+          <div class="proj-loc">Ekala Industrial Zone</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="alarm">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F8F6F2,#F0E8D4);">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">Security Alarm</div>
+          <div class="proj-name">Commercial Office Alarm System</div>
+          <div class="proj-loc">Kotte</div>
+        </div>
+      </div>
+
+      <div class="proj-card" data-cat="av">
+        <div class="proj-bg" style="background: linear-gradient(135deg,#F5EDD5,#ECE4C4);">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <div class="proj-overlay">
+          <div class="proj-tag">Audio Visual</div>
+          <div class="proj-name">Training Room Projector Setup</div>
+          <div class="proj-loc">Pannipitiya</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Note -->
+    <p class="reveal" style="text-align:center; font-size:13px; color:var(--text-3); margin-top:36px; line-height:1.7;">
+      A selection of completed projects shown here. Contact us to discuss your specific requirements — we're happy to share references from similar installations.
+    </p>
+  </div>
+</section>
+
+<!-- DURABILITY CALLOUT -->
+<section style="background:var(--bg-soft); border-top:1px solid var(--border);">
+  <div class="section-inner">
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border);">
+      <div style="background:var(--bg-soft); padding:40px 36px; text-align:center;" class="reveal">
+        <div style="font-family:var(--ff-display); font-size:clamp(40px,5vw,64px); font-weight:300; color:var(--gold); line-height:1;"><span class="counter" data-target="20"></span>+</div>
+        <div style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-3); margin-top:10px;">Years in Operation</div>
+        <p style="font-size:13px; color:var(--text-2); line-height:1.65; margin-top:12px;">Systems installed in our early years are still running today — a testament to correct specification and proper installation.</p>
+      </div>
+      <div style="background:var(--bg-soft); padding:40px 36px; text-align:center;" class="reveal d2">
+        <div style="font-family:var(--ff-display); font-size:clamp(40px,5vw,64px); font-weight:300; color:var(--gold); line-height:1;"><span class="counter" data-target="500"></span>+</div>
+        <div style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-3); margin-top:10px;">Installations Completed</div>
+        <p style="font-size:13px; color:var(--text-2); line-height:1.65; margin-top:12px;">Across residential, commercial, retail and institutional projects throughout Sri Lanka.</p>
+      </div>
+      <div style="background:var(--bg-soft); padding:40px 36px; text-align:center;" class="reveal d4">
+        <div style="font-family:var(--ff-display); font-size:clamp(40px,5vw,64px); font-weight:300; color:var(--gold); line-height:1; display:flex; align-items:center; justify-content:center;">100%</div>
+        <div style="font-size:11px; letter-spacing:0.16em; text-transform:uppercase; color:var(--text-3); margin-top:10px;">Satisfaction Commitment</div>
+        <p style="font-size:13px; color:var(--text-2); line-height:1.65; margin-top:12px;">Every project comes with full post-installation support and a dedicated contact for any issues that arise.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="cta-pattern"></div>
+  <div class="cta-inner">
+    <h2 class="reveal">Your Project Could Be <em>Next</em></h2>
+    <p class="reveal d1">Whether it's a home, office, retail space or institution — we bring the same level of care and quality to every job.</p>
+    <div class="cta-btns reveal d2">
+      <a href="tel:+94777654910" class="btn-white">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call 077 765 4910
+      </a>
+      <a href="https://wa.me/94777654910" class="btn-outline-white" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Emco Engineering" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div style="display:none"><div class="logo-emco">EMCO</div><div class="logo-engineering">Engineering</div></div>
+        </div>
+        <p class="footer-tagline">Sri Lanka's trusted name in security systems and audio solutions since 2004.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html" class="nav-link-anim">Home</a></li>
+          <li><a href="about.html" class="nav-link-anim">About Us</a></li>
+          <li><a href="services.html" class="nav-link-anim">Services</a></li>
+          <li><a href="projects.html" class="nav-link-anim">Projects</a></li>
+          <li><a href="contact.html" class="nav-link-anim">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">CCTV &amp; Surveillance</a></li>
+          <li><a href="services.html">Security Alarm</a></li>
+          <li><a href="services.html">Distributed Audio</a></li>
+          <li><a href="services.html">PA Systems</a></li>
+          <li><a href="services.html">Audio Visual</a></li>
+          <li><a href="services.html">PABX Systems</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="fc-item"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg><a href="tel:+94777654910">077 765 4910</a></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:emco654@gmail.com">emco654@gmail.com</a></div>
+        <div class="fc-item"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Pannipitiya, Sri Lanka</span></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Emco Engineering Pvt Ltd. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://web.facebook.com/EmcoEngineeringPvtLtd" class="soc-btn" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://wa.me/94777654910" class="soc-btn" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
