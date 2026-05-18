@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emco Engineering — Security &amp; Audio Systems | Sri Lanka</title>
+  <meta name="description" content="Emco Engineering Pvt Ltd — Expert CCTV, security alarm, distributed audio, AV, PA and PABX installation across Sri Lanka since 2004. Supply &amp; installation under one roof.">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Page Transition Overlay -->
+<div id="page-overlay"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo nav-link-anim">
+      <img src="assets/logo.png" alt="Emco Engineering" class="logo-img" onerror="this.closest('.nav-logo').classList.add('logo-fallback-active')">
+      <div class="logo-text-fallback"><div class="logo-emco">EMCO</div><div class="logo-engineering">Engineering</div></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html"    class="nav-link active nav-link-anim">Home</a>
+      <a href="about.html"   class="nav-link nav-link-anim">About</a>
+      <a href="services.html" class="nav-link nav-link-anim">Services</a>
+      <a href="projects.html" class="nav-link nav-link-anim">Projects</a>
+      <a href="contact.html"  class="nav-link nav-link-anim">Contact</a>
+    </div>
+    <div class="nav-cta-group">
+      <a href="tel:+94777654910" class="btn-nav-call">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wa.me/94777654910" class="btn-nav-wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile -->
+<div class="mobile-scrim" id="mobileScrim"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"    class="mobile-link nav-link-anim">Home</a>
+  <a href="about.html"   class="mobile-link nav-link-anim">About</a>
+  <a href="services.html" class="mobile-link nav-link-anim">Services</a>
+  <a href="projects.html" class="mobile-link nav-link-anim">Projects</a>
+  <a href="contact.html"  class="mobile-link nav-link-anim">Contact</a>
+  <div class="mobile-cta">
+    <a href="tel:+94777654910" class="mobile-call">📞 Call 077 765 4910</a>
+    <a href="https://wa.me/94777654910" class="mobile-wa" target="_blank">💬 WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-label" id="heroLabel">Est. 2004 &nbsp;·&nbsp; Pannipitiya, Sri Lanka</div>
+    <h1 class="hero-title">
+      <span class="word"><span class="word-inner">Security.</span></span>
+      <span class="word"><span class="word-inner accent">Sound.</span></span>
+      <span class="word"><span class="word-inner">Solutions.</span></span>
+    </h1>
+    <p class="hero-sub" id="heroSub">Expert supply &amp; installation of CCTV, security alarm, distributed audio, AV, PA and PABX systems — built to last decades across Sri Lanka.</p>
+    <div class="hero-cta" id="heroCta">
+      <a href="tel:+94777654910" class="btn-primary">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        <span>Call 077 765 4910</span>
+      </a>
+      <a href="https://wa.me/94777654910" class="btn-outline" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        <span>WhatsApp Us</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-scroll" id="heroScroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ===== SERVICES OVERVIEW ===== -->
+<section class="services-section">
+  <div class="section-inner">
+    <div class="section-eyebrow reveal">What We Do</div>
+    <h2 class="section-heading reveal d1">We Supply, We <em>Install,</em><br>We Maintain</h2>
+    <p class="section-body reveal d2">From a single CCTV camera to a full campus audio system — Emco provides the equipment, the expertise, and the long-term support. One call handles everything.</p>
+
+    <div class="services-grid">
+      <div class="s-card reveal d1">
+        <div class="s-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M14.83 9.17a5 5 0 010 5.66M17.66 6.34a9 9 0 010 11.32M6.34 6.34a9 9 0 000 11.32M9.17 9.17a5 5 0 000 5.66"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+        </div>
+        <h3>CCTV &amp; Surveillance</h3>
+        <p>HD and IP camera systems for homes, retail, offices and large facilities. Remote monitoring, night vision and cloud storage options.</p>
+        <a href="services.html" class="s-link nav-link-anim">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="s-card reveal d2">
+        <div class="s-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Security Alarm Systems</h3>
+        <p>Intruder detection, motion sensors, panic buttons and sirens. Wired and wireless solutions tailored to residential and commercial properties.</p>
+        <a href="services.html" class="s-link nav-link-anim">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="s-card reveal d3">
+        <div class="s-icon">
+          <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 010 7.07"/><path d="M19.07 4.93a10 10 0 010 14.14"/></svg>
+        </div>
+        <h3>Distributed Audio</h3>
+        <p>Background music and piped audio for restaurants, hotels, retail stores and offices. Zoned speaker systems with independent volume control per area.</p>
+        <a href="services.html" class="s-link nav-link-anim">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="s-card reveal d4">
+        <div class="s-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        </div>
+        <h3>PA Systems</h3>
+        <p>Public address solutions for schools, warehouses, hospitals and public venues. Clear, wide-coverage audio for announcements and emergency broadcast.</p>
+        <a href="services.html" class="s-link nav-link-anim">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="s-card reveal d5">
+        <div class="s-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Audio Visual</h3>
+        <p>Projectors, screens, LED displays, conferencing systems and home theatre setups. Professional AV integration for boardrooms, classrooms and event spaces.</p>
+        <a href="services.html" class="s-link nav-link-anim">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+      <div class="s-card reveal d6">
+        <div class="s-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </div>
+        <h3>PABX &amp; Telephone</h3>
+        <p>Private branch exchange systems for offices of all sizes. IP-PBX, analogue and hybrid solutions with voicemail, call routing and intercom integration.</p>
+        <a href="services.html" class="s-link nav-link-anim">Learn more <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Angled bottom divider -->
+  <svg class="angle-divider" viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:60px;fill:var(--obsidian);">
+    <polygon points="0,60 1440,0 1440,60"/>
+  </svg>
+</section>
+
+<!-- ===== STATS ===== -->
+<section class="stats-section">
+  <div class="stats-grid">
+    <div class="reveal">
+      <div class="stat-num"><span class="counter" data-target="21"></span><span class="stat-suf">+</span></div>
+      <div class="stat-lbl">Years of Experience</div>
+    </div>
+    <div class="reveal d1">
+      <div class="stat-num"><span class="counter" data-target="500"></span><span class="stat-suf">+</span></div>
+      <div class="stat-lbl">Installations Done</div>
+    </div>
+    <div class="reveal d2">
+      <div class="stat-num"><span class="counter" data-target="6"></span></div>
+      <div class="stat-lbl">Service Categories</div>
+    </div>
+    <div class="reveal d3">
+      <div class="stat-num" style="font-size:clamp(32px,4vw,52px);display:flex;align-items:center;justify-content:center;height:1em;line-height:1;">Island</div>
+      <div class="stat-lbl">Wide Coverage</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY EMCO ===== -->
+<section class="why-section">
+  <svg class="angle-divider" viewBox="0 0 1440 60" preserveAspectRatio="none" style="height:60px;fill:var(--charcoal);">
+    <polygon points="0,0 1440,60 0,60"/>
+  </svg>
+  <div class="section-inner">
+    <div class="why-grid">
+      <div>
+        <div class="section-eyebrow reveal">Why Choose Emco</div>
+        <h2 class="section-heading reveal d1">Trusted for Over<br><em>Two Decades</em></h2>
+        <ul class="why-list">
+          <li class="why-item reveal d2">
+            <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><h4>Systems That Last</h4><p>Emco installations from the mid-2000s are still running today. We use quality-grade equipment and proper cable management that stands the test of time.</p></div>
+          </li>
+          <li class="why-item reveal d3">
+            <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><h4>Supply &amp; Installation Under One Roof</h4><p>No middlemen. We source, supply, and install everything ourselves — which means accountability, better pricing and a single point of contact.</p></div>
+          </li>
+          <li class="why-item reveal d4">
+            <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><h4>25 Years of Technical Expertise</h4><p>Founder Nirosh Caldera has over 25 years of hands-on experience in CCTV, security and sound systems — knowledge that informs every project.</p></div>
+          </li>
+          <li class="why-item reveal d5">
+            <div class="why-check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div><h4>Island-Wide Service</h4><p>Based in Pannipitiya, we serve Kotte, Kalubowila, Panadura and clients across the island. Wherever you are, we come to you.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="why-visual reveal-left d2">
+        <div class="why-img-placeholder">
+          <svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="80" stroke-dasharray="8 8"/><circle cx="100" cy="100" r="50" stroke-dasharray="5 5"/><circle cx="100" cy="100" r="20"/></svg>
+        </div>
+        <div class="why-badge">
+          <strong>2004</strong>
+          <span>Established — 21 years strong</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA BANNER ===== -->
+<section class="cta-section">
+  <div class="cta-pattern"></div>
+  <div class="cta-inner">
+    <h2 class="reveal">Get Your Free <em>Site Survey</em></h2>
+    <p class="reveal d1">Not sure what system you need? Our team will assess your property, recommend the right solution and provide a no-obligation quote — at no cost to you.</p>
+    <div class="cta-btns reveal d2">
+      <a href="tel:+94777654910" class="btn-white">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call 077 765 4910
+      </a>
+      <a href="https://wa.me/94777654910" class="btn-outline-white" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        WhatsApp Us
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">
+          <img src="assets/logo.png" alt="Emco Engineering" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+          <div style="display:none"><div class="logo-emco">EMCO</div><div class="logo-engineering">Engineering</div></div>
+        </div>
+        <p class="footer-tagline">Sri Lanka's trusted name in security systems and audio solutions since 2004. We supply, install and maintain.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html"    class="nav-link-anim">Home</a></li>
+          <li><a href="about.html"   class="nav-link-anim">About Us</a></li>
+          <li><a href="services.html" class="nav-link-anim">Services</a></li>
+          <li><a href="projects.html" class="nav-link-anim">Projects</a></li>
+          <li><a href="contact.html"  class="nav-link-anim">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">CCTV &amp; Surveillance</a></li>
+          <li><a href="services.html">Security Alarm</a></li>
+          <li><a href="services.html">Distributed Audio</a></li>
+          <li><a href="services.html">PA Systems</a></li>
+          <li><a href="services.html">Audio Visual</a></li>
+          <li><a href="services.html">PABX Systems</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <div class="fc-item">
+          <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013 9.82a19.79 19.79 0 01-3.07-8.63A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:+94777654910">077 765 4910</a>
+        </div>
+        <div class="fc-item">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <a href="mailto:emco654@gmail.com">emco654@gmail.com</a>
+        </div>
+        <div class="fc-item">
+          <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Pannipitiya, Sri Lanka</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2025 Emco Engineering Pvt Ltd. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://web.facebook.com/EmcoEngineeringPvtLtd" class="soc-btn" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="https://wa.me/94777654910" class="soc-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
